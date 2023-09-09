@@ -12,7 +12,7 @@ import java.util.List;
 public class CarStoreServiceImpl implements CarStoreService {
 
     @Autowired
-    private CarStoreClient carStoreClient;
+    protected CarStoreClient carStoreClient;
 
     @Override
     public List<CarDTO> getCarForSales() {

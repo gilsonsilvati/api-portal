@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class OwnerServiceImpl implements OwnerService {
 
     @Autowired
-    private CarStoreClient carStoreClient;
+    protected CarStoreClient carStoreClient;
 
     @Override
     public void createdOwnerCar(OwnerDTO ownerDTO) {

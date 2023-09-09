@@ -22,10 +22,10 @@ import java.util.List;
 public class CarStoreController {
 
     @Autowired
-    private CarStoreService carStoreService;
+    protected CarStoreService carStoreService;
 
     @Autowired
-    private KafkaProducerMessage kafkaProducerMessage;
+    protected KafkaProducerMessage kafkaProducerMessage;
 
     @PostMapping("/posts")
     public ResponseEntity<Void> carSale(@RequestBody CarDTO carDTO) {

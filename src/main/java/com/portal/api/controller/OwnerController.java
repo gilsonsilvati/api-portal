@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OwnerController {
 
     @Autowired
-    private OwnerService ownerService;
+    protected OwnerService ownerService;
 
     @PostMapping
     public ResponseEntity<Void> createOwnerCar(@RequestBody OwnerDTO ownerDTO) {
