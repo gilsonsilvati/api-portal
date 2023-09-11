@@ -50,7 +50,7 @@ public class CarStoreController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCarForSale(@PathVariable String id) {
+    public ResponseEntity<Void> deleteCarSale(@PathVariable String id) {
 
         carStoreService.removeCarForSale(id);
 
